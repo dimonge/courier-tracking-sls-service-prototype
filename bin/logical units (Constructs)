@@ -1,0 +1,31 @@
+logical units (Constructs)
+  - infrastructure code 
+  - runtime code
+  - configuration code
+
+
+
+Stack for deployment model
+- App repos (Asset tracking for Driver app)
+  - Asset tracking for Driver app => repo 
+      - Constructs definning the scopes and 
+      - Stacks for groups of 
+        - stateful resource 
+        - stateless resource
+  - DivineEvent Sourcing for Partner app => repo
+    - Constructs definning the scopes and 
+      - Stacks for groups of 
+        - stateful resource 
+        - stateless resource
+
+  - Routing app handles routing the deliveries from Partners to Fleet's Driver.
+    - Constructs definning the scopes and 
+      - Stacks for groups of 
+        - stateful resource 
+        - stateless resource
+
+Todo:
+https://docs.aws.amazon.com/cdk/latest/guide/cdk_pipeline.html
+
+Checklist before going to production
+- https://aws.amazon.com/blogs/devops/best-practices-for-developing-cloud-applications-with-aws-cdk/

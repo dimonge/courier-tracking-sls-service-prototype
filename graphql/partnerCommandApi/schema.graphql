@@ -1,0 +1,17 @@
+type Event {
+  type: String
+  data: AWSJSON
+}
+
+
+input EventInput {
+  type: String
+  data: AWSJSON
+}
+
+type Query {
+  getEvents: [Event]
+}
+type Mutation {
+  newEvent(event: EventInput!): Event
+}
